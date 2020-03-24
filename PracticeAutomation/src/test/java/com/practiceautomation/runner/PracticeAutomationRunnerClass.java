@@ -10,7 +10,7 @@ import cucumber.api.junit.Cucumber;
 	(
 		features = "src/main/resources/Feature/TestCase.feature",
 		plugin = {"pretty", "html:reports/cucumber-html-report"},
-		tags = {"@TC_05_Filtering_The_Price_from_high_to_low_and_remove_item_from_cart"},
+		//tags = {"@TC-02_Register"},
 		glue = {"com.practiceautomation.stepdefinition"},
 		monochrome = true
 	)
