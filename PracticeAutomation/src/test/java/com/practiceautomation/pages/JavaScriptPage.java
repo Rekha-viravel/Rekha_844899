@@ -17,8 +17,7 @@ public class JavaScriptPage extends LoginPage
 	By viewcartbutton = By.xpath("//*[@id=\"wpmenucartli\"]/a/span[1]");
 	By javascriptaddtobasket1 = By.xpath("//*[@id=\"content\"]/ul/li[2]/a[2]");
 	By javascriptaddtobasket2 = By.xpath("//*[@id=\"content\"]/ul/li[3]/a[2]");
-	
-	
+
 		//To click JavaScript book category and add books to the cart
 		public int javascriptBookCategory() throws InterruptedException
 		{	

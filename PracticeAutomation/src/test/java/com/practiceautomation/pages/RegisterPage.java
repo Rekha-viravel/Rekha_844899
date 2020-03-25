@@ -35,5 +35,5 @@ public class RegisterPage extends LoginPage
 			 TakesScreenshot snap = (TakesScreenshot)driver;
 			 File source = snap.getScreenshotAs(OutputType.FILE);
 			 FileUtils.copyFile(source, new File("C:\\Users\\Rekha\\git\\Rekha_844899\\PracticeAutomation\\snap1.png"));
-				}
+		}
 }

@@ -2,11 +2,10 @@ package com.practiceautomation.runner;
 
 import org.junit.AfterClass;
 import org.junit.runner.RunWith;
-
 import com.cucumber.listener.Reporter;
-
 import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
+
 @RunWith(Cucumber.class)
 @CucumberOptions 
 	(
@@ -17,6 +16,7 @@ import cucumber.api.junit.Cucumber;
 		glue = {"com.practiceautomation.stepdefinition"},
 		monochrome = true
 	)
+
 public class PracticeAutomationRunnerClass 
 {
 	

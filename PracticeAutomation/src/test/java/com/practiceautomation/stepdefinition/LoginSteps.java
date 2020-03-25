@@ -10,6 +10,7 @@ public class LoginSteps
 {
 	LoginPage login = new LoginPage();
 	RegisterPage register = new RegisterPage();
+	
 	@Given("^Launch the chrome browser in system$")
 	public void launch_the_chrome_browser_in_system() 
 	{
