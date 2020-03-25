@@ -1,5 +1,7 @@
 package com.practiceautomation.stepdefinition;
 
+import java.io.IOException;
+
 import com.practiceautomation.pages.LoginPage;
 import com.practiceautomation.pages.RegisterPage;
 
@@ -9,7 +11,7 @@ import cucumber.api.java.en.Then;
 public class RegisterSteps
 {
 	LoginPage login = new LoginPage();
-RegisterPage register = new RegisterPage();
+    RegisterPage register = new RegisterPage();
 	
 	@Given("^Launch the chrome browser$")
 	public void launch_the_chrome_browser() 
@@ -33,6 +35,12 @@ RegisterPage register = new RegisterPage();
 	public void click_the_Register_button() throws InterruptedException 
 	{
 		 register.clickRegisterButton();
+	}
+	
+	@Then("^take the screenshot$")
+	public void take_the_screenshot() throws InterruptedException, IOException 
+	{
+	    register.screenshot1();
 	}
 
 	@Then("^Close the browser$")

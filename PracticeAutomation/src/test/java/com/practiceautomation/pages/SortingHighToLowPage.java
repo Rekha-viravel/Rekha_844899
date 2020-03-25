@@ -1,6 +1,12 @@
 package com.practiceautomation.pages;
 
+import java.io.File;
+import java.io.IOException;
+
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.support.ui.Select;
 
 public class SortingHighToLowPage  extends LoginPage
@@ -28,4 +34,12 @@ public class SortingHighToLowPage  extends LoginPage
 			Thread.sleep(5000);
 			driver.findElement(addtobasket2).click();
 		}
+		//To take screenshot for invalid login
+		public void screenshot2() throws InterruptedException, IOException
+		 {
+			Thread.sleep(5000);
+			TakesScreenshot snap = (TakesScreenshot)driver;
+			File source = snap.getScreenshotAs(OutputType.FILE);
+			FileUtils.copyFile(source, new File("Screenshots\\snap2.png"));
+		}	
 }

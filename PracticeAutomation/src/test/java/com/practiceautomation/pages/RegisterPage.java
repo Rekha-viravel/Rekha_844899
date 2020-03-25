@@ -1,6 +1,11 @@
 package com.practiceautomation.pages;
 
+import java.io.File;
+import java.io.IOException;
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 
 public class RegisterPage extends LoginPage
 {
@@ -23,4 +28,12 @@ public class RegisterPage extends LoginPage
 			Thread.sleep(4000);
 			driver.findElement(registerbutton).click();
 		}
+		//To take screenshot 
+		public void screenshot1() throws InterruptedException, IOException
+		{
+			 Thread.sleep(3000);
+			 TakesScreenshot snap = (TakesScreenshot)driver;
+			 File source = snap.getScreenshotAs(OutputType.FILE);
+			 FileUtils.copyFile(source, new File("C:\\Users\\Rekha\\git\\Rekha_844899\\PracticeAutomation\\snap1.png"));
+				}
 }

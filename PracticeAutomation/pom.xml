@@ -32,6 +32,17 @@
     <version>3.141.59</version>
 </dependency>
 <dependency>
+<groupId>com.aventstack</groupId>
+<artifactId>extentreports</artifactId>
+<version>4.0.8</version>
+<scope>provided</scope>
+</dependency>
+<dependency>
+<groupId>com.vimalselvam</groupId>
+<artifactId>cucumber-extentsreport</artifactId>
+<version>3.0.2</version>
+</dependency>
+<dependency>
     <groupId>org.apache.poi</groupId>
     <artifactId>poi-ooxml</artifactId>
     <version>3.9</version>

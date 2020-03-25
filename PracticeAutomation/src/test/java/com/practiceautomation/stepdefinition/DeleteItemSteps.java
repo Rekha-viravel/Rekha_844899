@@ -51,7 +51,8 @@ public class DeleteItemSteps
 	
 
 		@Then("^browser is closed in the system$")
-		public void browser_is_closed_in_the_system() throws Throwable {
+		public void browser_is_closed_in_the_system() throws InterruptedException
+		{
 		    login.closeBrowser();
 		}
 

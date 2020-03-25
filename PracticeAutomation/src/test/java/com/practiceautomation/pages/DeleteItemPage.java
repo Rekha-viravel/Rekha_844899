@@ -12,7 +12,8 @@ public class DeleteItemPage extends LoginPage
 	By addtobasket2=By.xpath("//*[@id=\"content\"]/ul/li[3]/a[2]");
 	By viewcart=By.xpath("//*[@id=\"wpmenucartli\"]/a/span[2]");
 	By removeclick= By.xpath("//*[@id=\"page-34\"]/div/div[1]/form/table/tbody/tr[1]/td[1]/a");
-		//To select price high to low in default sorting drop down box
+	
+		//To select price high to low in default sorting drop down box and delete  book
 		public void additemandelete() throws InterruptedException
 		{
 			Thread.sleep(5000);
@@ -33,13 +34,9 @@ public class DeleteItemPage extends LoginPage
 			Thread.sleep(6000);
 		    driver.findElement(viewcart).click();
 			
-			
-			Thread.sleep(8000);
+			Thread.sleep(7000);
 			driver.findElement(removeclick).click();
-			
-			
-}
+			  		
+          }		
 		
-	
-				
-}
+     }

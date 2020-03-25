@@ -1,5 +1,7 @@
 package com.practiceautomation.stepdefinition;
 
+import java.io.IOException;
+
 import com.practiceautomation.pages.LoginPage;
 import com.practiceautomation.pages.RegisterPage;
 import com.practiceautomation.pages.SortingHighToLowPage;
@@ -42,6 +44,11 @@ public class SortingHighToLowSteps {
 	    hightolow.priceHighToLow();
 	}
 
+	@Then("^screenshot is taken in the website$")
+	public void screenshot_is_taken_in_the_website() throws InterruptedException, IOException 
+	{
+	    hightolow.screenshot2();
+	}
 	@Then("^browser is closed$")
 	public void browser_is_closed() throws InterruptedException 
 	{

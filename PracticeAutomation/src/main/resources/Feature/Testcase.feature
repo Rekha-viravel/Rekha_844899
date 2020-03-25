@@ -7,6 +7,7 @@ Given Launch the chrome browser
 Then open the Practice automation website
 Then  Enter the Email and password in register
 And Click the Register button
+And  take the screenshot 
 Then Close the browser
 
 @TC-02_Login_Functionlity
@@ -34,6 +35,7 @@ Then  Practice automation website is opened
 Then  Entering the Email and password in the  Login page
 And Login Button is clicked
 Then Click Shop icon and in Dropdown select the prices from high to low
+Then screenshot is taken in the website
 Then  browser is closed
 
 @TC_05_Filtering_The_Price_from_high_to_low_and_remove_item_from_cart
