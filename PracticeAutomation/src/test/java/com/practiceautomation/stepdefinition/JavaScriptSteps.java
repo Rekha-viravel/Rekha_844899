@@ -44,10 +44,20 @@ public class JavaScriptSteps
 	@Then("^Click the  Shop icon, Click JavaScript and buy the book$")
 	public int click_the_Shop_icon_Click_JavaScript_and_buy_the_book() throws InterruptedException 
 	{
+		js.javascriptBookCategory();
 		int javascript=js.javascriptBookCategory();
-		int expected=5;
-		Assert.assertEquals(expected,javascript);
-		return javascript;	
+		boolean script;
+		if(javascript==0)
+		{
+			script=false;
+			System.out.println("OUT OF STOCK");
+			Assert.assertTrue(script);
+		}
+		else
+		{
+			System.out.println("STOCKS ARE AVAILABLE ,YOU CAN BUY THE BOOK");	
+		}
+		return javascript;
 	}
 
 	@Then("^View the cart js book$")
